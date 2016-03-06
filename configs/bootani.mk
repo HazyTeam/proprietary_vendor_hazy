@@ -13,3 +13,8 @@ ifneq ($(filter hazy_deb hazy_flo,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/hazy/prebuilts/bootanimation/flo.zip:system/media/bootanimation.zip
 endif
+
+ifneq ($(filter hazy_Z00A,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/hazy/prebuilts/bootanimation/Z00A.zip:system/media/bootanimation.zip
+endif
