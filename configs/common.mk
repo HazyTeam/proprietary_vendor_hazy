@@ -80,6 +80,8 @@ endif
         
 # Init.d script support
 PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/bin/backuptool.sh:system/bin/backuptool.sh \
+	$(LOCAL_PATH)/bin/backuptool.functions:system/bin/backuptool.functions \
     $(LOCAL_PATH)/bin/sysinit:system/bin/sysinit
        
         
